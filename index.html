@@ -11,19 +11,40 @@
       <link rel="shortcut icon" href="img/netflix-icon.ico" type="image/x-icon">
       <title>Netflix Login</title>
     </head>
+
     <body>
       <section>
         <div class="top-bar">
           <img src="img/netlfix-logo.png" alt="Logo Netflix">
         </div>
-        <div class="form-area">
+
+        <div class="form-area flex column">
           <div class="form-container">
               <h1>Entrar</h1>
-              <form action="#">
-                <input type="text" placeholder="E-mail" required />
-                <input type="password" placeholder="Senha" required />
-                <input type="submit" value="Enviar" />
-                <div class="form-extra">
+              <form class= "flex-column" action="#">
+
+                <input
+                class="form-input" 
+                id="email"
+                type="text" 
+                placeholder="E-mail" 
+                required />
+                <label for="email">E-mail</label>
+
+                <input
+                class="form-input"
+                id="senha" 
+                type="password" 
+                placeholder="Senha" 
+                required />
+                <label for="senha">senha</label>
+
+                <input 
+                class="form-button"
+                type="submit" 
+                value="Enviar" />
+
+                <div class="form-extra flex-row">
                   <div class="remind">
                     <input type="checkbox" name="remind" id="remind" />
                     <label for="remind">Lembre-se de mim</label>
