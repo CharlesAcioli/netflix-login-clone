@@ -76,7 +76,7 @@ text-decoration: underline;
   justify-content: center; /*alinhar horizontalmente*/
 }
 .form-container {
-  max-width: 35em;
+  max-width: 28em;
   margin-top: 2em auto;
   padding: 3em;
   background-color: rgba(0, 0, 0, 0.8);
@@ -166,7 +166,7 @@ label[for="senha"] {
   transition: background 0.25s ease-in-out;
 }
 
-.form-buttom:hover {
+.form-button:hover {
   background-color: #90060d;
   cursor: pointer;
 }
@@ -186,4 +186,27 @@ justify-content: space-between;
 .remind label {
 margin-left: 0.5em;
 vertical-align: middle;
+}
+
+
+
+
+
+/* MIDIA QUERY */
+
+@media only screen and (max-width: 1024px) {
+  .form-container {
+    max-width: 35em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner img {
+    opacity: 0;
+  }
+  .form-container {
+    max-width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
 }
